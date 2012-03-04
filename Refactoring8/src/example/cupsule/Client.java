@@ -7,9 +7,11 @@ public class Client {
 	public static void main(String[] args){
 		Person kent = new Person();
 		Set s = new HashSet();
-		s.add(new Course("Smalltalkプログラミング", false));
-		s.add(new Course("4言語同時習得", true));
-		kent.setCourses(s);
+//		s.add(new Course("Smalltalkプログラミング", false));
+//		s.add(new Course("4言語同時習得", true));
+		kent.addCourse(new Course("Smalltalkプログラミング", false));
+		kent.addCourse(new Course("4言語同時習得", true));
+		kent.initializeCourses(s);
 		System.out.println(kent.getCources().size());
 		Course refact = new Course("リファクタリング", false);
 		s.add(refact);

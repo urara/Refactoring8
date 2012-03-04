@@ -24,11 +24,13 @@ public class CupsuleJUnitTest {
 	public void PersonTest() {
 		Person kent = new Person();
 		Set s = new HashSet();
-		s.add(new Course("Smalltalkプログラミング", false));
-		kent.setCourses(s);
+		//s.add(new Course("Smalltalkプログラミング", false));
+		kent.addCourse(new Course("Smalltalkプログラミング", false));
+		kent.initializeCourses(s);
 		assertEquals(1, kent.getCources().size());
-		s.add(new Course("4言語同時習得", true));
-		kent.setCourses(s);
+		//s.add(new Course("4言語同時習得", true));
+		kent.addCourse(new Course("4言語同時習得", true));
+		kent.initializeCourses(s);
 		assertEquals(2, kent.getCources().size());
 		
 		

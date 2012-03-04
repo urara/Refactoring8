@@ -2,8 +2,8 @@ package example.cupsule;
 
 public class Course {
 
-	String name;
-	boolean isAdvanced;
+	public String name;
+	private boolean isAdvanced;
 
 	public Course(String name, boolean isAdvanced){
 		this.name = name;
