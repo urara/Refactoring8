@@ -25,7 +25,13 @@ public class Client {
 		System.out.println(kent.getCources().size());
 		
 		//move Behavior
-		kent.numberOfCourses();
+		Iterator iter = kent.getCources().iterator();
+		int count = 0;
+		while(iter.hasNext()){
+			Course each = (Course) iter.next();
+			System.out.println(each.name);
+			if(each.isAdvanced()) count++;
+		}
 		
 	}
 }

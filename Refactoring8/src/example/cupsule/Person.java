@@ -34,15 +34,4 @@ public class Person {
 	}
 
 
-	public void numberOfCourses() {
-		Iterator iter = this.getCources().iterator();
-		int count = 0;
-		while(iter.hasNext()){
-			Course each = (Course) iter.next();
-			System.out.println(each.name);
-			if(each.isAdvanced()) count++;
-		}
-		
-	}
-
 }
