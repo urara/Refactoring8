@@ -29,8 +29,8 @@ public class Client {
 		int count = 0;
 		while(iter.hasNext()){
 			Course each = (Course) iter.next();
-			System.out.println(each.name);
 			if(each.isAdvanced()) count++;
+			System.out.println(each.name);
 		}
 		
 	}
