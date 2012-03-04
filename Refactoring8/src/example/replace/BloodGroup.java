@@ -14,11 +14,13 @@ public class BloodGroup {
 		_code = code;
 	}
 	
-	public int getCode(){
+	private int getCode(){
 		return _code;
 	}
 	
-	public static BloodGroup code(int arg){
+	private static BloodGroup code(int arg){
 		return _values[arg];
 	}
+	
+	
 }

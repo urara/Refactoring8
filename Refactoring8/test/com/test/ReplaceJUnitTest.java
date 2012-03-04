@@ -2,22 +2,27 @@ package com.test;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import junit.framework.Assert;
 import org.junit.Test;
-import example.cupsule.Course;
-import example.cupsule.Person;
+
+import example.replace.BloodGroup;
+import example.replace.Person;
 
 public class ReplaceJUnitTest {
 
 	@Test
-	public void CourseTest() {
-		Course courseF = new Course("‚Ý‚ñ‚È‚ÌPython", false);
-		assertEquals(false , courseF.isAdvanced());
-		Course courseT = new Course("Ruby on Rails", true);
-		assertEquals(true , courseT.isAdvanced()); 
+	public void PersonTest() {
+		Person kent = new Person(1);
+//		assertEquals(1, kent.getBloodGroup());
+		kent.setBloodGroup(BloodGroup.A);
+		assertEquals(2, kent.getBloodGroup());
 	}
+	
+//	@Test
+//	public void BloodGroupTest(){
+//		BloodGroup bloodGroup;
+//		BloodGroup.code(1);
+//		assertEquals(BloodGroup.A.getCode(), bloodGroup.getCode());
+//	}
 
 }
