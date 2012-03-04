@@ -3,6 +3,8 @@ package example.cupsule;
 import java.util.HashSet;
 import java.util.Set;
 
+import java.util.Iterator;
+
 public class Client {
 	public static void main(String[] args){
 		Person kent = new Person();
@@ -17,7 +19,11 @@ public class Client {
 		s.add(refact);
 		s.add(new Course("’ŠÛ“I‚È—vŒ‚ÌÀŒ»", true));
 		System.out.println(kent.getCources().size());
-		kent.getCources().remove(refact);
+		//kent.getCources().remove(refact);
+		kent.removeCourse(refact);
 		System.out.println(kent.getCources().size());
+		
+		//move Behavior
+		kent.numberOfCourses();
 	}
 }
