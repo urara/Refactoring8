@@ -14,7 +14,7 @@ public class BloodGroup {
 		_code = code;
 	}
 	
-	private int getCode(){
+	public int getCode(){
 		return _code;
 	}
 	
