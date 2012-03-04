@@ -32,7 +32,13 @@ public class CupsuleJUnitTest {
 		kent.addCourse(new Course("4Œ¾Œê“¯K“¾", true));
 		kent.initializeCourses(s);
 		assertEquals(2, kent.getCources().size());
+		kent.setSkill(0, "©“®‰^“]–Æ‹–");
+		kent.setSkill(1, "‰pŒŸ‚S‹‰");
+		assertEquals("©“®‰^“]–Æ‹–",(kent.getSkills()[0]));
 		
+		String[] skills = {"‘åŒ^“ñ—Ö","–ìØƒ\ƒ€ƒŠƒG"};
+		kent.setSkills(skills);
+		assertEquals("‘åŒ^“ñ—Ö", kent.getSkills()[0]);
 		
 		
 		

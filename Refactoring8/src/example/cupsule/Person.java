@@ -44,5 +44,25 @@ public class Person {
 		}
 		
 	}
+	
+	//cupsule sequence
+	String[] _skills = new String[10];
+	
+	public String[] getSkills(){
+		return _skills;
+	}
+//	void setSkills(String[] arg){
+//		_skills = arg;
+//	}
 
+	public void setSkill(int index , String newSkill){
+		_skills[index] = newSkill;
+	}
+	
+	public void setSkills(String[] arg){
+		_skills = new String[arg.length];
+		for(int i = 0;i < arg.length;i++){
+			setSkill(i, arg[i]);
+		}
+	}
 }
